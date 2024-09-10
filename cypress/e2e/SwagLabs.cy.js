@@ -10,7 +10,7 @@ describe('SwagLabs', function () {
 
   })
 
-  it('Login with invalid UserID and PassWord', function () {
+  xit('Login with invalid UserID and PassWord', function () {
 
     cy.get('#login-button').click().wait(2000)
     cy.get('h3').contains('Username is required').should('have.text', 'Epic sadface: Username is required')
@@ -20,7 +20,7 @@ describe('SwagLabs', function () {
 
   })
 
-  xit('Side Menu functionality', function () {
+  it('Side Menu functionality', function () {
 
     cy.get('.bm-burger-button').click()
     cy.get('#inventory_sidebar_link').should('have.text', 'All Items').click()
@@ -31,7 +31,7 @@ describe('SwagLabs', function () {
 
   })
 
-  xit('Add to Cart and cart icon functionality', function () {
+  it('Add to Cart and cart icon functionality', function () {
 
     //way 1 ----------------------------------------------------
     // cy.get('.inventory_item').each(($el, index) => {
