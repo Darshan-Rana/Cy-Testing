@@ -10,7 +10,7 @@ describe('Admin User', function () {
       }
       // still throw the error if it's not the one we want to ignore
       throw err;
-    })
+    });
 
     it('Admin Login', function () {
       cy.get('#username').type('ADM')
@@ -21,4 +21,4 @@ describe('Admin User', function () {
     })
 
   })
-})
+}) 
